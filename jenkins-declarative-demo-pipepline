@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git checkout"){
+            steps{
+                git credentialsId: 'Dinakar726', url: 'https://github.com/Dinakar726/car-rentals-1.git'
+            }
+            
+        }
+    }
+}
